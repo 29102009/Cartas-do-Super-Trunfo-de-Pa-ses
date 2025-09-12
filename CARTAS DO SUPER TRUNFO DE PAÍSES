@@ -1,0 +1,32 @@
+#include <studio.h>
+
+int main(){
+    char Estado 1, Código da Carta 1, Nome da Cidade 1;
+    int População 1, Número de Pontos Turísticos 1;
+    float Área 1 (em km²),PIB 1;
+
+   printf("digite o Estado 1: \n");
+   scanf("%s, &Estado1")
+
+   printf("digite o Código da carta 1: \n");
+   scanf("%s, &Código da carta 1: ")
+
+   printf("digite Nome da Cidade 1: \n");
+   scanf("%s, &Nome da Cidade 1: ") 
+
+   printf("digite a Populaçõa 1: \n");
+    scanf("%d, &População: ");
+
+    printf("digite Número de Pontos Turísticos 1: \n");
+    scanf("%d, &Número de Pontos Turísticos 1: ");
+
+    printf("digite  a Área 1: \n");
+    scanf("%f, &Área 1: ");
+
+    printf("digite  o PIB 1: \n");
+    scanf("%f, &PIB 1: ");
+
+    printf(Estado 1: %s - Código da carta 1: %s \n, Nome da cidade 1: %s \n, Estado 1, Código da Carta 1, Nome da cidade1
+    prinf("População 1: %d \n");
+    printf("Área 1: %f - PIB 1: %f \n") 
+    prinf("Nùmero de pontos Turísticos 1: %d \n")   
