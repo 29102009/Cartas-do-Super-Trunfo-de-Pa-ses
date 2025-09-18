@@ -1,32 +1,92 @@
-#include <studio.h>
+#include <stdio.h>
 
-int main(){
-    char Estado 1, Código da Carta 1, Nome da Cidade 1;
-    int População 1, Número de Pontos Turísticos 1;
-    float Área 1 (em km²),PIB 1;
+int main() {
+    char Estado2[3];
+    char Estado1[3];  // Para armazenar siglas de estado (ex: "SP", "RJ")
+    char CodigoCarta2;
+    char CodigoCarta1;
+    char NomeCidade2[50];
+    char NomeCidade1[50];  // Para armazenar nomes de cidades
+    int Populacao2, NumeroPontosTuristicos2;
+    int Populacao1, NumeroPontosTuristicos1;
+    float Area2, Pib2;
+    float Area1, Pib1;
 
-   printf("digite o Estado 1: \n");
-   scanf("%s, &Estado1")
+    printf("Digite o Estado 1 (sigla): \n");
+    scanf("%2s", Estado1);  // Lê até 2 caracteres para a sigla do estado
+    getchar();  // Limpa o buffer do teclado
 
-   printf("digite o Código da carta 1: \n");
-   scanf("%s, &Código da carta 1: ")
+    printf("Digite o Codigo da carta 1 (um caractere): \n");
+    scanf(" %c", &CodigoCarta1);
+    getchar();  // Limpa o buffer do teclado
 
-   printf("digite Nome da Cidade 1: \n");
-   scanf("%s, &Nome da Cidade 1: ") 
+    printf("Digite o Nome da Cidade 1: \n");
+    scanf("%s49[^\n]", NomeCidade1);  // Lê até 49 caracteres ou até encontrar nova linha
+    getchar();  // Limpa o buffer do teclado
 
-   printf("digite a Populaçõa 1: \n");
-    scanf("%d, &População: ");
+    printf("Digite a Populacao 1: \n");
+    scanf("%d", &Populacao1);
+    getchar();  // Limpa o buffer do teclado
 
-    printf("digite Número de Pontos Turísticos 1: \n");
-    scanf("%d, &Número de Pontos Turísticos 1: ");
+    printf("Digite o Numero de Pontos Turisticos 1: \n");
+    scanf("%d", &NumeroPontosTuristicos1);
+    getchar();  // Limpa o buffer do teclado
 
-    printf("digite  a Área 1: \n");
-    scanf("%f, &Área 1: ");
+    printf("Digite a Area 1: \n");
+    scanf("%f", &Area1);
+    getchar();  // Limpa o buffer do teclado
 
-    printf("digite  o PIB 1: \n");
-    scanf("%f, &PIB 1: ");
+    printf("Digite o PIB 1: \n");
+    scanf("%f", &Pib1);
+    getchar();  // Limpa o buffer do teclado
 
-    printf(Estado 1: %s - Código da carta 1: %s \n, Nome da cidade 1: %s \n, Estado 1, Código da Carta 1, Nome da cidade1
-    prinf("População 1: %d \n");
-    printf("Área 1: %f - PIB 1: %f \n") 
-    prinf("Nùmero de pontos Turísticos 1: %d \n")   
+
+    printf("Digite o Estado 2 (sigla): \n");
+    scanf("%2s", Estado2);  // Lê até 2 caracteres para a sigla do estado
+    getchar();  // Limpa o buffer do teclado
+
+    printf("Digite o Codigo da carta 2 (um caractere): \n");
+    scanf(" %c", &CodigoCarta2);
+    getchar();  // Limpa o buffer do teclado
+
+    printf("Digite o Nome da Cidade 2: \n");
+    scanf("%s49[^\n]", NomeCidade2);  // Lê até 49 caracteres ou até encontrar nova linha
+    getchar();  // Limpa o buffer do teclado
+
+    printf("Digite a Populacao 2: \n");
+    scanf("%d", &Populacao2);
+    getchar();  // Limpa o buffer do teclado
+
+    printf("Digite o Numero de Pontos Turisticos 2: \n");
+    scanf("%d", &NumeroPontosTuristicos1);
+    getchar();  // Limpa o buffer do teclado
+
+    printf("Digite a Area 2: \n");
+    scanf("%f", &Area2);
+    getchar();  // Limpa o buffer do teclado
+
+    printf("Digite o PIB 2: \n");
+    scanf("%f", &Pib2);
+    getchar();  // Limpa o buffer do teclado
+
+    // Exibindo os resultados
+    printf("\n--- DADOS CADASTRADOS ---\n");
+    printf("\n--- CARTA 1 ---\n");
+    printf("Estado: %s\n", Estado1);
+    printf("Codigo da Carta: %c\n", CodigoCarta1);
+    printf("Nome da Cidade: %s\n", NomeCidade1);
+    printf("Populacao: %d habitantes\n", Populacao1);
+    printf("Area: %.2f km²\n", Area1);
+    printf("PIB: R$ %.2f\n", Pib1);
+    printf("Numero de Pontos Turisticos: %d\n", NumeroPontosTuristicos1);
+    printf("\n--- CARTA 2 ---\n");
+    printf("Estado: %s\n", Estado2);
+    printf("Codigo da Carta: %c\n", CodigoCarta2);
+    printf("Nome da Cidade: %s\n", NomeCidade2);
+    printf("Populacao: %d habitantes\n", Populacao2);
+    printf("Area: %.2f km²\n", Area2);
+    printf("PIB: R$ %.2f\n", Pib2);
+    printf("Numero de Pontos Turisticos: %d\n", NumeroPontosTuristicos2);
+
+    return 0;
+}
